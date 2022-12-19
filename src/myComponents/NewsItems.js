@@ -2,20 +2,23 @@ import React, { Component } from 'react'
 
 export class NewsItems extends Component {
     render() {
-        
+
+        let { title, desc, imageUrl, newsUrl } = this.props;
+
+        // let myStyle = {
+        //     BackgroundColor: 'black',
+        //     padding: '10px',
+        //     margin: '10px'
+        // }
+
         return (
             <>
-                <div className="container text-center">
-                    <div className="row">
-                        <div className="col" style={{BackgroundColor:'black', padding:'10px'}}>
-                            This is NewsItem 1
-                        </div>
-                        <div className="col">
-                            This is NewsItem 2
-                        </div>
-                        <div className="col">
-                            This is NewsItem 3
-                        </div>
+                <div className="card" style={{width: "18rem"}}>
+                    <img src={imageUrl} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">{title}</h5>
+                        <p className="card-text">{desc}</p>
+                        <a href={newsUrl} target='_blank' rel="noreferrer" className="btn btn-primary">Read more...</a>
                     </div>
                 </div>
             </>
@@ -24,4 +27,7 @@ export class NewsItems extends Component {
 }
 
 export default NewsItems
+
+
+
 
