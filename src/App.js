@@ -22,7 +22,7 @@ export default class App extends Component {
         {/* Hello my dear friend = {this.name} */}
 
       </div>
-      <News/>
+      <News pageSize = {6}/>
 </>
     )
   }
