@@ -1,51 +1,59 @@
-import React, { Component } from 'react'
 
-export default class Footer extends Component {
-  render() {
+  
+
+
+  import React from 'react'
+  
+  const Footer = () => {
+    
+  let myStyle={
+    backgroundColor: "rgba(0, 0, 0, 0.2)"
+
+  }
     return (
       <>
-<!-- Footer -->
+{/* <!-- Footer --> */}
 <footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
+  {/* <!-- Grid container --> */}
   <div class="container p-4">
-    <!-- Section: Social media -->
+    {/* <!-- Section: Social media --> */}
     <section class="mb-4">
-      <!-- Facebook -->
+      {/* <!-- Facebook --> */}
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-facebook-f"></i
       ></a>
 
-      <!-- Twitter -->
+      {/* <!-- Twitter --> */}
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-twitter"></i
       ></a>
 
-      <!-- Google -->
+      {/* <!-- Google --> */}
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-google"></i
       ></a>
 
-      <!-- Instagram -->
+      {/* <!-- Instagram --> */}
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-instagram"></i
       ></a>
 
-      <!-- Linkedin -->
+      {/* <!-- Linkedin --> */}
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-linkedin-in"></i
       ></a>
 
-      <!-- Github -->
+      {/* <!-- Github --> */}
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
         ><i class="fab fa-github"></i
       ></a>
     </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Form -->
+    {/* <!-- Section: Social media --> */}
+{/*  */}
+    {/* <!-- Section: Form --> */}
     <section class="">
       <form action="">
-        <!--Grid row-->
+        {/* <!--Grid row--> */}
         <div class="row d-flex justify-content-center">
           {{/*<!--Grid column-->*/}}
           <div class="col-auto">
@@ -57,7 +65,7 @@ export default class Footer extends Component {
 
           {{/*<!--Grid column-->*/}}
           <div class="col-md-5 col-12">
-            <!-- Email input -->
+            {/* <!-- Email input --> */}
             <div class="form-outline form-white mb-4">
               <input type="email" id="form5Example21" class="form-control" />
               <label class="form-label" for="form5Example21">Email address</label>
@@ -67,19 +75,19 @@ export default class Footer extends Component {
 
           {{/*<!--Grid column-->*/}}
           <div class="col-auto">
-            <!-- Submit button -->
+            {/* <!-- Submit button --> */}
             <button type="submit" class="btn btn-outline-light mb-4">
               Subscribe
             </button>
           </div>
           {{/*<!--Grid column-->*/}}
         </div>
-        <!--Grid row-->
+        {/* <!--Grid row--> */}
       </form>
     </section>
-    <!-- Section: Form -->
+    {/* <!-- Section: Form --> */}
 
-    <!-- Section: Text -->
+    {/* <!-- Section: Text --> */}
     <section class="mb-4">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
@@ -87,11 +95,11 @@ export default class Footer extends Component {
         eum harum corrupti dicta, aliquam sequi voluptate quas.
       </p>
     </section>
-    <!-- Section: Text -->
+    {/* <!-- Section: Text --> */}
 
-    <!-- Section: Links -->
+    {/* <!-- Section: Links --> */}
     <section class="">
-      <!--Grid row-->
+      {/* <!--Grid row--> */}
       <div class="row">
         {{/*<!--Grid column-->*/}}
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -184,7 +192,8 @@ export default class Footer extends Component {
   {/* <!-- Grid container --> */}
 
   {/* <!-- Copyright --> */}
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  
+  <div class="text-center p-3" style={myStyle}>
     © 2020 Copyright:
     <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
   </div>
@@ -194,4 +203,5 @@ export default class Footer extends Component {
       </>
     )
   }
-}
+  
+  export default Footer
